@@ -14,12 +14,12 @@ set(SOURCES
 
 add_executable(${PROJECT_NAME} ${SOURCES})
 
-target_link_libraries(${PROJECT_NAME} stdc++fs)
-
-target_include_directories(${PROJECT_NAME}
+target_include_directories(${PROJECT_NAME} 
     PRIVATE
         ${PROJECT_SOURCE_DIR}/include
 )
+
+target_link_libraries(${PROJECT_NAME} stdc++fs)
 
 set_target_properties(${PROJECT_NAME} PROPERTIES
     CXX_STANDARD 17
